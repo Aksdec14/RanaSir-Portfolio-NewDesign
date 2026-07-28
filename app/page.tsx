@@ -6,6 +6,8 @@ import HowIWork from './component/Howiwork'
 import ToolsWontReach from './component/Toolswontreach'
 import WhereIFit from './component/Whereifit'
 import Proof from './component/Proof'
+import Contact from './component/Contact'
+import Footer from './component/Footer'
 
 const page = () => {
   return (
@@ -17,6 +19,8 @@ const page = () => {
       <ToolsWontReach />
       <WhereIFit /> 
       <Proof />
+      <Contact /> 
+      <Footer />
     </div>
   )
 }
