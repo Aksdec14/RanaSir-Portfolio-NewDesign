@@ -39,7 +39,7 @@ export default function Footer() {
                     </h2>
                     <div className="lg:max-w-3xl pt-16">
                         <p className="text-2xl font-bold text-stone-50">
-                            I turn a growing or hurting business into one
+                            I turn a growing but hurting business into one
                             that runs.
                         </p>
                         <p className="mt-1 text-2xl font-bold text-red-200">
