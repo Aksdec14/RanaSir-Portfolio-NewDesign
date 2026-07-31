@@ -1,15 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const NAV_LINKS = [
-    { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
-    { label: "Expertise", href: "#expertise" },
-    { label: "Contact", href: "#contact" },
-];
+import { useContent } from "@/lib/ContentContext";
 
 export default function Navbar() {
+    const { content } = useContent();
+    const c = content?.navbar;
+    const links = c?.links || [
+        { label: "About", href: "#about" },
+        { label: "Experience", href: "#experience" },
+        { label: "Expertise", href: "#expertise" },
+        { label: "Contact", href: "#contact" },
+    ];
+
     const [scrolled, setScrolled] = useState(false);
     const [active, setActive] = useState("Contact");
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,12 +37,12 @@ export default function Navbar() {
                     href="#"
                     className="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl"
                 >
-                    Executive<span className="text-red-800"> Portfolio</span>
+                    {c?.logo_prefix || "Executive"}<span className="text-red-800"> {c?.logo_suffix || "Portfolio"}</span>
                 </a>
 
                 {/* Desktop links */}
                 <ul className="hidden items-center gap-10 md:flex">
-                    {NAV_LINKS.map((link) => (
+                    {links.map((link) => (
                         <li key={link.label}>
                             <a
                                 href={link.href}
@@ -64,7 +67,7 @@ export default function Navbar() {
                     href="#contact"
                     className="hidden rounded-sm bg-red-800 px-6 py-3 text-sm font-semibold tracking-wide text-stone-50 transition-all duration-300 hover:bg-red-900 hover:shadow-lg hover:shadow-red-800/20 md:inline-block"
                 >
-                    Get in Touch
+                    {c?.cta_text || "Get in Touch"}
                 </a>
 
                 {/* Mobile toggle */}
@@ -94,7 +97,7 @@ export default function Navbar() {
                     }`}
             >
                 <ul className="flex flex-col gap-1 px-6 pb-6">
-                    {NAV_LINKS.map((link) => (
+                    {links.map((link) => (
                         <li key={link.label}>
                             <a
                                 href={link.href}
@@ -115,7 +118,7 @@ export default function Navbar() {
                             onClick={() => setMobileOpen(false)}
                             className="block rounded-sm bg-red-800 px-6 py-3 text-center text-sm font-semibold text-stone-50"
                         >
-                            Get in Touch
+                            {c?.cta_text || "Get in Touch"}
                         </a>
                     </li>
                 </ul>

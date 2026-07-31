@@ -1,21 +1,15 @@
+"use client";
+
+import { useContent } from "@/lib/ContentContext";
+
 export default function RecognitionBand() {
-  const points = [
-    {
-      lead: "The business doubled, but the back office didn't.",
-      rest: "Things slip through. Customers feel it. You feel it more.",
-    },
-    {
-      lead: "Everything runs through you.",
-      rest: "Nothing important happens unless you're in the room — which means you can't step back, and you can't scale.",
-    },
-    {
-      lead: "You've hired good people, but the machine still stutters.",
-      rest: "The problem isn't the people. It's that no one has designed how the work actually flows.",
-    },
-    {
-      lead: "You bought the tools, and they didn't fix it.",
-      rest: "Software doesn't fix a broken process. It just makes the mess faster.",
-    },
+  const { content } = useContent();
+  const c = content?.recognition;
+  const points = c?.points || [
+    { lead: "The business doubled, but the back office didn't.", rest: "Things slip through. Customers feel it. You feel it more." },
+    { lead: "Everything runs through you.", rest: "Nothing important happens unless you're in the room — which means you can't step back, and you can't scale." },
+    { lead: "You've hired good people, but the machine still stutters.", rest: "The problem isn't the people. It's that no one has designed how the work actually flows." },
+    { lead: "You bought the tools, and they didn't fix it.", rest: "Software doesn't fix a broken process. It just makes the mess faster." },
   ];
 
   return (
@@ -24,19 +18,17 @@ export default function RecognitionBand() {
         {/* Left: heading + closing line */}
         <div className="md:col-span-2">
           <p className="text-sm font-semibold tracking-widest text-red-200">
-            SOUND FAMILIAR?
+            {c?.badge || "SOUND FAMILIAR?"}
           </p>
 
           <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">
-            You probably recognise at least one of these.
+            {c?.heading || "You probably recognise at least one of these."}
           </h2>
 
           <p className="mt-6 text-base leading-relaxed text-red-100 sm:text-lg">
-            If any of that lands, you don&apos;t need more strategy. You need
-            someone to go in, find what&apos;s actually slowing the business
-            down, and fix it —{" "}
+            {c?.description || "If any of that lands, you don't need more strategy. You need someone to go in, find what's actually slowing the business down, and fix it —"}{" "}
             <span className="font-semibold text-white">
-              across every function, not one corner at a time.
+              {c?.closing_highlight || "across every function, not one corner at a time."}
             </span>
           </p>
         </div>
