@@ -6,14 +6,16 @@ export default function About() {
   const { content } = useContent();
   const c = content?.about;
   const paragraphs = c?.paragraphs || [
-    "I've started and run my own companies, so I know exactly what it feels like when growth outpaces the operation — the late nights, the dropped balls, the sense that the thing you built is starting to run you instead of the other way round. One of them, FusionEdge, is a SaaS platform for enterprise operations that I built and still run — I understood how operations work deeply enough to build the software that runs them.",
-    "Then I did it at scale. Inside a listed organisation, I took the entire operation apart and put it back together — procurement, production, HR, admin, facilities, support, finance — one process at a time. I found what was broken, redesigned it, chose the right systems to run it, and built the governance to keep it honest. Then I coached the CEO and leadership team to run it that way long after I'd left.",
-    "That's the difference between me and most advisors. I don't look at one department and hand you a report. I see the whole business at once — where it leaks time, money, and momentum — and I stay until it's fixed and holding. I've done this for companies of every size, from startups to organisations of more than a thousand people.",
-    "When we work together, you get someone senior enough to sit with your board and grounded enough to fix the thing that's actually broken on the floor. Both, in one person.",
+    "I understand what is required to hold a business together through rapid growth, because I have built and run companies of my own, and have carried out this work — across operations, people, governance, and strategy — at scale, from early-stage ventures to multinational organisations, across industries, for three decades.",
+    "Founded and continue to lead FusionEdge, a SaaS platform for enterprise operations.",
+    "Rebuilt a listed company department by department — operations, human resources, governance, finance, and strategy alike — with every function assessed, corrected, and governed.",
+    "Served as Chief Excellence Officer across a group of companies, building shared standards, a performance framework, and governance that has lasted.",
+    "Coached founders and CEOs directly, from early-stage ventures to listed company leadership, across industries and irrespective of sector.",
+    "I view the business as a whole — operations, people, governance, and strategy together — and remain engaged until the change is embedded, irrespective of industry or stage. Strategic judgment and hands-on execution, delivered by one person.",
   ];
 
-  const heading = c?.heading || "I've sat in your chair. Then I went and fixed it for others.";
-  const highlight = c?.heading_highlight || "Then I went and fixed it";
+  const heading = c?.heading || "I have led as you lead now. I have since done this work";
+  const highlight = c?.heading_highlight || "I have since done this work";
   const hParts = heading.split(highlight);
   const headingHighlighted = hParts.length > 1 ? (
     <>{hParts[0]}<span className="text-red-700">{highlight}</span>{hParts[1]}</>

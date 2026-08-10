@@ -21,31 +21,31 @@ const DEFAULT_FITS: Fit[] = [
     {
         title: "As your fractional CXO",
         description:
-            "The core of what I do. I become your part-time operations and excellence chief — owning the back end so you can stay on product, customers, and growth. Senior operating muscle, without the cost or commitment of a full-time hire, across one company or a few at once. I don't carry a sales or revenue target; I build the engine that lets yours run.",
+            "The core of what I do. I serve as your part-time Chief Excellence Officer — covering operations, people, governance, and strategy — so you can remain focused on product, customers, and growth. Senior, cross-functional capability, without the cost or commitment of a full-time hire, across one company or several at once, in any industry. I do not carry a sales or revenue target; I build the engine that allows yours to run.",
         tag: "Ongoing commitment",
     },
     {
         title: "For one expensive problem",
         description:
-            "Sometimes it's not the whole operation — it's one thing that's costing you badly. A process that won't scale. Missed SLAs. A messy integration after an acquisition. I come in, find the root cause, and fix it.",
+            "At times, it is not the whole business, but a single issue costing you significantly — a process that will not scale, a leadership structure that no longer fits, a governance gap ahead of a raise or exit, or a difficult integration following an acquisition. I identify the root cause and resolve it.",
         tag: "Project based",
     },
     {
         title: "As an advisor to you",
         description:
-            "Some founders and CEOs just need a seasoned operator to think with — on the operating model, the next stage of scale, the hard calls. Quiet, on-call, in your corner.",
+            "Some founders and chief executives require a seasoned operator to think alongside — on strategy, the operating model, governance, and the next phase of scale, as well as the more difficult decisions. Available on a discreet, as-needed basis.",
         tag: "Retainer access",
     },
     {
         title: "To level up your team",
         description:
-            "When the goal is capability that stays, I train and coach your people to run and improve their own operations — process, change, and leadership for the managers who'll carry it.",
+            "Where the objective is capability that endures, I train and coach your people to run and improve their own operations — process, governance, change management, and leadership for the managers who will carry it forward.",
         tag: "Curated programs",
     },
     {
         title: "On your board",
         description:
-            "As an independent director, I bring an operator's eye to the boardroom — reading the operation behind the numbers and asking the questions that protect the business.",
+            "As an independent director, I bring an operator's perspective to the boardroom, reading the operation behind the numbers and asking the questions that protect the business.",
         tag: "Governance appointment",
     },
 ];

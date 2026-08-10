@@ -1,0 +1,245 @@
+CONTENT UPDATE — TEXT ONLY
+Prepared for: Rana Rajvinder Singh
+Site: rana-sir-portfolio-new-design.vercel.app
+Date: August 8, 2026 (Revision 2 — broadened positioning)
+
+INSTRUCTIONS FOR OPENCODE
+- This is a text/copy update only. Do NOT modify CSS, Tailwind classes, component structure, colors,
+  fonts, spacing, animations, or the carousel mechanism in "Where I Fit."
+- Keep all existing CTAs functional (same anchors/hrefs) — only the visible button or link text changes
+  where specified below.
+- Where a revision is given, swap the full text but keep the same HTML tag (h1/h2/h3/p/li, etc.) it
+  currently lives in.
+- Where no instruction is given for a section, leave it completely unchanged.
+- If the stat-callout visual treatment in the Track Record section would require new markup or
+  components beyond a simple text swap, skip that part and update the bullet text only — do not invent
+  new layout.
+- Testimonials are direct client quotes and must remain verbatim, in the client's own words — do not
+  rewrite them, only reorder as specified.
+- Tone: no contractions anywhere ("I have" not "I've", "do not" not "don't", "cannot" not "can't"), no
+  idioms/casual expressions, no exclamation points, no marketing adjectives ("amazing", "seamless"),
+  prefer complete composed sentences over fragments (except the named "Find it. Fix it. Make it stick."
+  framework label).
+- Positioning: generalist senior executive operator — operations, HR/people, governance, and strategy
+  together, plus direct CEO/founder coaching — not an operations-only specialist.
+- Tenure: every instance of "25 years" / "twenty-five years" anywhere on the site should read "30 years" /
+  "thirty years", including instances not explicitly listed below.
+- Experience should read as spanning company stages (early-stage startups to multinational
+  organisations) and as industry-agnostic. Avoid language implying a single industry specialism.
+- If other text elsewhere on the site was not addressed here but still has contractions, idioms, casual
+  phrasing, operations-only framing, or a tenure figure other than thirty years, flag it for review rather
+  than rewriting independently.
+
+===========================================================
+1. NAVIGATION / HEADER
+===========================================================
+Primary navigation: NO CHANGE — keep existing labels: About, Experience, Expertise, Contact
+
+CTA button (top right):
+Schedule a Conversation
+
+===========================================================
+2. HERO SECTION
+===========================================================
+Eyebrow label:
+FRACTIONAL CXO · OPERATIONS · PEOPLE · GOVERNANCE · STRATEGY
+
+Headline (unchanged):
+Your business is growing faster than it can hold itself together.
+
+Subhead:
+Over three decades, I have built and run companies of my own, scaled operations from early-stage ventures to multinational organisations, and worked directly alongside founders across industries — spanning operations, people, governance, and strategy. I recognise this stage of growth because I have led through it, repeatedly, and I address it as a matter of established practice, not theory.
+
+CTA button:
+Schedule a Conversation
+
+===========================================================
+3. "DOES THIS SOUND FAMILIAR" — PAIN POINTS
+===========================================================
+Eyebrow label:
+A FAMILIAR PATTERN
+
+Headline:
+You are likely to recognise at least one of these.
+
+Intro line:
+These are not indications of poor leadership. They are the predictable consequence of growth outpacing structure, and they are resolved with the right attention, applied in the right place.
+
+Pain points (unchanged):
+- The business has doubled. The back office has not.
+- Every decision continues to pass through you.
+- You have hired capable people, and the operation continues to falter.
+- You have invested in the right tools. The underlying issue remains unresolved.
+
+===========================================================
+4. WHY FOUNDERS BRING ME IN
+===========================================================
+Eyebrow label:
+WHY FOUNDERS BRING ME IN
+
+Headline (unchanged):
+I have led as you lead now. I have since done this work for others.
+
+Lead-in line:
+I understand what is required to hold a business together through rapid growth, because I have built and run companies of my own, and have carried out this work — across operations, people, governance, and strategy — at scale, from early-stage ventures to multinational organisations, across industries, for three decades.
+
+Proof stack (present as a clean list rather than paragraphs):
+- Founded and continue to lead FusionEdge, a SaaS platform for enterprise operations.
+- Rebuilt a listed company department by department — operations, human resources, governance, finance, and strategy alike — with every function assessed, corrected, and governed.
+- Served as Chief Excellence Officer across a group of companies, building shared standards, a performance framework, and governance that has lasted.
+- Coached founders and CEOs directly, from early-stage ventures to listed company leadership, across industries and irrespective of sector.
+
+Closing line:
+I view the business as a whole — operations, people, governance, and strategy together — and remain engaged until the change is embedded, irrespective of industry or stage. Strategic judgment and hands-on execution, delivered by one person.
+
+===========================================================
+5. METHODOLOGY — "FIND IT. FIX IT. MAKE IT STICK."
+===========================================================
+(Framework and heading retained as-is.)
+
+Eyebrow label:
+A WAY THROUGH
+
+Headline (unchanged):
+Find it. Fix it. Make it stick.
+
+Intro line:
+A business under strain — whether the strain shows up in operations, people, governance, or strategy — can appear overwhelming from within. Having addressed this many times, across industries and at every stage of scale, I apply a method that brings clarity quickly.
+
+01 — Find it.
+I map how the work actually flows, distinct from what the organisational chart indicates. Within a matter of weeks, you will have a clear view of where the business is losing ground, and where to direct attention first.
+OUTCOME: CLARITY
+
+02 — Fix it.
+I address the priorities in sequence — redesigning broken processes, correcting systems and structure, resolving the people and governance issues beneath them, and removing what is impeding progress. This is hands-on work, conducted directly within the business.
+OUTCOME: EXECUTION
+
+03 — Make it stick.
+I coach your leadership team to operate the new model and to embed the discipline required to sustain it. What remains is a business that no longer depends on my involvement.
+OUTCOME: AUTONOMY
+
+===========================================================
+6. "THE PART NO SOFTWARE REACHES"
+===========================================================
+Eyebrow label:
+THE PART NO SOFTWARE REACHES
+
+Headline:
+You can automate the operation. You cannot automate identifying what is actually wrong with it.
+
+Body:
+A great deal of software is offered as the solution to operational strain. I make use of these tools as well, but they report only what has been recorded, and the true source of the problem is rarely recorded.
+
+It surfaces in the conversation that follows a meeting. In the room that falls silent at the wrong moment. In the workaround a team adopted months earlier and never disclosed. A dashboard cannot read a room.
+
+Identifying it requires a person on the ground, listening, observing, and asking a second and third question until the underlying answer emerges. This is what thirty years of this work teaches a person to notice.
+
+===========================================================
+7. WHERE I FIT
+===========================================================
+(Existing carousel component and layout retained without change. All five engagement types below must
+remain present in the data so each is reachable through the carousel controls.)
+
+Eyebrow label:
+WHERE I FIT
+
+Headline (unchanged):
+Bring me in the way that fits where you are.
+
+As your fractional CXO:
+The core of what I do. I serve as your part-time Chief Excellence Officer — covering operations, people, governance, and strategy — so you can remain focused on product, customers, and growth. Senior, cross-functional capability, without the cost or commitment of a full-time hire, across one company or several at once, in any industry. I do not carry a sales or revenue target; I build the engine that allows yours to run.
+ONGOING COMMITMENT
+
+For one expensive problem:
+At times, it is not the whole business, but a single issue costing you significantly — a process that will not scale, a leadership structure that no longer fits, a governance gap ahead of a raise or exit, or a difficult integration following an acquisition. I identify the root cause and resolve it.
+PROJECT BASED
+
+As an advisor to you:
+Some founders and chief executives require a seasoned operator to think alongside — on strategy, the operating model, governance, and the next phase of scale, as well as the more difficult decisions. Available on a discreet, as-needed basis.
+RETAINER ACCESS
+
+To level up your team:
+Where the objective is capability that endures, I train and coach your people to run and improve their own operations — process, governance, change management, and leadership for the managers who will carry it forward.
+CURATED PROGRAMS
+
+On your board (unchanged):
+As an independent director, I bring an operator's perspective to the boardroom, reading the operation behind the numbers and asking the questions that protect the business.
+GOVERNANCE APPOINTMENT
+
+===========================================================
+8. TRACK RECORD
+===========================================================
+Eyebrow label:
+A RECORD OF RESULTS
+
+Headline:
+Thirty years of building, fixing, and governing businesses — from startup to multinational, across industries.
+
+(Where the layout supports it, present these as stat callouts — number plus short label — rather than
+inline bullet sentences. If that requires a layout change, keep as bullets with the wording below and do
+not invent new markup.)
+
+- 30 years across operations, HR, governance, and strategy, from early-stage ventures to organisations exceeding 1,000 employees
+- Rebuilt a listed company department by department, with every function — including HR and governance — assessed, corrected, and governed
+- Served as Chief Excellence Officer across a group of companies, establishing shared standards, a performance framework, and lasting governance
+- Coached founders and CEOs directly, from first-time founders to listed company leadership, across industries
+- Led mergers and acquisitions from the operator's perspective — due diligence, negotiation, and integration that delivers measurable value
+- Built a company's market presence from inception — brand, digital strategy, public relations, and industry standing
+- Built a customer success function from inception, managing operations processing 90,000 documents monthly without compromising quality
+
+===========================================================
+9. TESTIMONIALS
+===========================================================
+(Direct, attributed client quotes — retained VERBATIM. Only the order changes so chief-executive-level
+quotes appear first. Do not rewrite.)
+
+1.
+"He came in when we were scaling fast and losing control of the back end. Within months, the chaos had a system — and it held."
+— Founder & CEO, SaaS Scale-up
+
+2.
+"I've worked with a lot of operators. Few can walk the floor, read a room, and fix the process in the same afternoon."
+— Group CEO, Multi-Entity Holding Company
+
+3.
+"He found the real bottleneck — not the one in our dashboards, the one no one wanted to name. Then he fixed it."
+— COO Peer, Manufacturing Group
+
+===========================================================
+10. CLOSING CTA / CONTACT SECTION
+===========================================================
+Eyebrow label:
+BEGIN THE CONVERSATION
+
+Headline:
+The first step is straightforward.
+
+Body:
+Share what is not functioning as it should — whether the issue sits in operations, people, governance, or strategy. I will provide a direct assessment of whether I can help, with no obligation. Provide a brief account of what is happening within your business, and I will respond within one business day with an honest assessment and an outline of how I would proceed.
+
+Form submit button text:
+Send — I Will Respond Within 24 Hours
+
+Note on form fields: if a content-only change, the "Company" field may be labelled "Company (optional)."
+If this requires a validation-logic change beyond content, leave the field as required.
+
+===========================================================
+11. FOOTER
+===========================================================
+Footer navigation labels — link destinations (href/anchors) and layout stay the same; only the visible
+label text changes:
+
+GROUP           CURRENT LABEL   NEW LABEL
+Strategy        The Problem     A Familiar Pattern
+About           About           About (unchanged)
+Methodology     How I Work      A Way Through
+What Tools Miss (new section)   The Part No Software Reaches
+Engagement      Ways to Work    Where I Fit
+Proof           (new section)   A Record of Results
+Connect         Contact         Contact (unchanged)
+
+Footer tagline:
+I convert a growing but strained business into one that runs, governs, and scales on its own — across operations, people, governance, and strategy. Fractional CXO · Independent Director · Executive Advisor.
+
+Footer bottom line (unchanged):
+© 2026 Rana Rajvinder Singh · India · reachout@ranarajvindersingh.com

@@ -14,9 +14,9 @@ export default function HowIWork() {
     const { content } = useContent();
     const c = content?.how_i_work;
     const steps = c?.steps || [
-        { number: "01", title: "Find it.", description: "I go through the business and map how the work really flows — not the org chart, the reality. Within a few weeks you'll have a clear, honest picture of where the business is bleeding and which fixes matter most.", outcome: "Clarity" },
-        { number: "02", title: "Fix it.", description: "We work down the list in priority order. I redesign the broken processes, put the right systems in place, sort out the structure and the back-office functions, and clear the blocks one by one — with my hands on it, not from a slide.", outcome: "Execution" },
-        { number: "03", title: "Make it stick.", description: "The real job is making sure it holds after I leave. I coach your leaders to run the new way and embed the habits and governance so the business doesn't slide back. You end up with an operation that runs without me — and without you having to hold it together.", outcome: "Autonomy" },
+        { number: "01", title: "Find it.", description: "I map how the work actually flows, distinct from what the organisational chart indicates. Within a matter of weeks, you will have a clear view of where the business is losing ground, and where to direct attention first.", outcome: "CLARITY" },
+        { number: "02", title: "Fix it.", description: "I address the priorities in sequence — redesigning broken processes, correcting systems and structure, resolving the people and governance issues beneath them, and removing what is impeding progress. This is hands-on work, conducted directly within the business.", outcome: "EXECUTION" },
+        { number: "03", title: "Make it stick.", description: "I coach your leadership team to operate the new model and to embed the discipline required to sustain it. What remains is a business that no longer depends on my involvement.", outcome: "AUTONOMY" },
     ];
 
     return (
@@ -34,7 +34,7 @@ export default function HowIWork() {
                         <div className="mt-6 h-0.5 w-12 bg-red-800" />
                     </div>
                     <p className="max-w-xl text-left text-[15px] leading-relaxed text-neutral-00">
-                        {c?.description || "Walking into a messy operation is overwhelming for everyone except someone who's done it many times. Here's how I cut through it."}
+                        {c?.description || "A business under strain — whether the strain shows up in operations, people, governance, or strategy — can appear overwhelming from within. Having addressed this many times, across industries and at every stage of scale, I apply a method that brings clarity quickly."}
                     </p>
                 </div>
             </div>

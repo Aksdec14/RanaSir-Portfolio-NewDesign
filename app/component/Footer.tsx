@@ -7,9 +7,9 @@ export default function Footer() {
     const { content } = useContent();
     const c = content?.footer;
     const navGroups = c?.nav_groups || [
-        { label: "Strategy", links: [{ label: "The Problem", href: "#the-problem" }, { label: "About", href: "#about" }] },
-        { label: "Methodology", links: [{ label: "How I Work", href: "#how-i-work" }, { label: "What Tools Miss", href: "#what-tools-miss" }] },
-        { label: "Engagement", links: [{ label: "Ways to Work", href: "#ways-to-work" }, { label: "Proof", href: "#proof" }] },
+        { label: "Strategy", links: [{ label: "A Familiar Pattern", href: "#the-problem" }, { label: "About", href: "#about" }] },
+        { label: "Methodology", links: [{ label: "A Way Through", href: "#how-i-work" }, { label: "The Part No Software Reaches", href: "#what-tools-miss" }] },
+        { label: "Engagement", links: [{ label: "Where I Fit", href: "#ways-to-work" }, { label: "A Record of Results", href: "#proof" }] },
         { label: "Connect", links: [{ label: "Contact", href: "#contact" }] },
     ];
 
@@ -23,10 +23,10 @@ export default function Footer() {
                     </h2>
                     <div className="lg:max-w-3xl pt-16">
                         <p className="text-2xl font-bold text-stone-50">
-                            {c?.tagline1 || "I turn a growing but hurting business into one that runs."}
+                            {c?.tagline1 || "I convert a growing but strained business into one that runs, governs, and scales on its own — across operations, people, governance, and strategy."}
                         </p>
                         <p className="mt-1 text-2xl font-bold text-red-200">
-                            {c?.tagline2 || "Fractional CXO · Operational Excellence · Independent Director."}
+                            {c?.tagline2 || "Fractional CXO · Independent Director · Executive Advisor."}
                         </p>
                     </div>
                 </div>

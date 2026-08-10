@@ -31,11 +31,11 @@ export default function Contact() {
                 {/* Left — copy */}
                 <div>
                     <p className="text-xs font-semibold tracking-widest text-red-800">
-                        {c?.badge || "LET'S TALK"}
+                        {c?.badge || "BEGIN THE CONVERSATION"}
                     </p>
 
                     <h2 className="mt-3 text-4xl font-extrabold leading-tight tracking-tight text-neutral-900 sm:text-5xl">
-                        {c?.heading || "The first step is easy."}
+                        {c?.heading || "The first step is straightforward."}
                     </h2>
                     <p className="mt-2 text-lg font-medium text-neutral-600">
                         {c?.subtitle || "Tell me what's breaking. I'll tell you straight if I can help."}
@@ -44,7 +44,7 @@ export default function Contact() {
                     <div className="mt-6 h-0.5 w-12 bg-red-800" />
 
                     <p className="mt-6 max-w-md text-[15px] leading-relaxed text-neutral-600">
-                        {c?.description || "No pitch, no obligation. Send me a couple of lines about what's going on in your business, and I'll come back within a day with an honest view — whether it's something I can fix, and how I'd start."}
+                        {c?.description || "Share what is not functioning as it should — whether the issue sits in operations, people, governance, or strategy. I will provide a direct assessment of whether I can help, with no obligation. Provide a brief account of what is happening within your business, and I will respond within one business day with an honest assessment and an outline of how I would proceed."}
                     </p>
 
                     <div className="mt-10 rounded-md bg-red-800 p-8">
@@ -111,7 +111,7 @@ export default function Contact() {
                                 htmlFor="company"
                                 className="text-sm font-semibold text-neutral-900"
                             >
-                                {c?.form_company_label || "Company"}
+                                {c?.form_company_label || "Company (optional)"}
                             </label>
                             <input
                                 id="company"
@@ -141,7 +141,7 @@ export default function Contact() {
                         </div>
 
                         <Button
-                            label={c?.form_submit_text || "Send it — I'll reply within 24 hours"}
+                            label={c?.form_submit_text || "Send — I Will Respond Within 24 Hours"}
                             onClick={handleSubmit}
                             color="red"
                             className="w-full"

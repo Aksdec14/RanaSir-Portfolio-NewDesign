@@ -18,17 +18,17 @@ export default function RecognitionBand() {
         {/* Left: heading + closing line */}
         <div className="md:col-span-2">
           <p className="text-sm font-semibold tracking-widest text-red-200">
-            {c?.badge || "SOUND FAMILIAR?"}
+            {c?.badge || "A FAMILIAR PATTERN"}
           </p>
 
           <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">
-            {c?.heading || "You probably recognise at least one of these."}
+            {c?.heading || "You are likely to recognise at least one of these."}
           </h2>
 
           <p className="mt-6 text-base leading-relaxed text-red-100 sm:text-lg">
-            {c?.description || "If any of that lands, you don't need more strategy. You need someone to go in, find what's actually slowing the business down, and fix it —"}{" "}
+            {c?.description || "These are not indications of poor leadership. They are the predictable consequence of growth outpacing structure, and they are resolved with the right attention, applied in the right place."}{" "}
             <span className="font-semibold text-white">
-              {c?.closing_highlight || "across every function, not one corner at a time."}
+              {c?.closing_highlight || ""}
             </span>
           </p>
         </div>

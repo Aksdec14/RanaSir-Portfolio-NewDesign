@@ -67,7 +67,7 @@ export default function Navbar() {
                     href="#contact"
                     className="hidden rounded-sm bg-red-800 px-6 py-3 text-sm font-semibold tracking-wide text-stone-50 transition-all duration-300 hover:bg-red-900 hover:shadow-lg hover:shadow-red-800/20 md:inline-block"
                 >
-                    {c?.cta_text || "Get in Touch"}
+                    {c?.cta_text || "Schedule a Conversation"}
                 </a>
 
                 {/* Mobile toggle */}
@@ -118,7 +118,7 @@ export default function Navbar() {
                             onClick={() => setMobileOpen(false)}
                             className="block rounded-sm bg-red-800 px-6 py-3 text-center text-sm font-semibold text-stone-50"
                         >
-                            {c?.cta_text || "Get in Touch"}
+                            {c?.cta_text || "Schedule a Conversation"}
                         </a>
                     </li>
                 </ul>

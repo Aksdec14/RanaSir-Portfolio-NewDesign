@@ -19,12 +19,12 @@ export default function Hero() {
 
     return (
         <section
-            className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-10 [grid-template-areas:'text'_'image'_'button'] md:grid-cols-2 md:px-10 md:py-14 md:[grid-template-areas:'text_image']"
+            className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-6 [grid-template-areas:'text'_'image'_'button'] md:grid-cols-2 md:px-10 md:py-8 md:[grid-template-areas:'text_image']"
         >
             {/* Left: text content */}
             <div className="[grid-area:text]">
                 <p className="text-sm font-semibold tracking-widest text-red-800">
-                    {c?.badge || "FRACTIONAL CXO · OPERATIONAL EXCELLENCE"}
+                    {c?.badge || "FRACTIONAL CXO · OPERATIONS · PEOPLE · GOVERNANCE · STRATEGY"}
                 </p>
 
                 <h1 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-neutral-900 sm:text-5xl lg:text-5xl">
@@ -38,7 +38,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600">
-                    {c?.description || "That's not a failure. It's the moment every good company hits — when the product is working, the customers are coming, and the operation underneath quietly starts to crack. Processes that lived in someone's head. A team improvising. Founders firefighting instead of building."}
+                    {c?.description || "Over three decades, I have built and run companies of my own, scaled operations from early-stage ventures to multinational organisations, and worked directly alongside founders across industries — spanning operations, people, governance, and strategy. I recognise this stage of growth because I have led through it, repeatedly, and I address it as a matter of established practice, not theory."}
                 </p>
 
                 <div className="mt-4 max-w-xl">
@@ -82,7 +82,7 @@ export default function Hero() {
                 {/* Desktop-only CTA, right under the accordion */}
                 <div className="mt-8 hidden max-w-xl md:block">
                     <Button
-                        label={c?.cta_text || "Book a 30-minute call — tell me what's breaking"}
+                        label={c?.cta_text || "Schedule a Conversation"}
                         href="#contact"
                         color="red"
                     />
@@ -92,18 +92,18 @@ export default function Hero() {
             {/* Right: portrait */}
             <div className="relative mx-auto aspect-[4/5] w-full max-w-md md:max-w-lg [grid-area:image]">
                 <Image
-                    src="/hero.png"
+                    src="/HeaderImage.png"
                     alt="Executive portrait"
                     fill
                     priority
-                    className="object-contain"
+                    className="object-cover"
                 />
             </div>
 
             {/* Mobile-only CTA, below the image */}
             <div className="[grid-area:button] md:hidden">
                 <Button
-                    label={c?.cta_text || "Book a 30-minute call — tell me what's breaking"}
+                    label={c?.cta_text || "Schedule a Conversation"}
                     href="#contact"
                     color="red"
                 />

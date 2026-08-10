@@ -32,12 +32,13 @@ export default function Proof() {
     const { content } = useContent();
     const c = content?.proof;
     const record = c?.record || [
-        "Rebuilt a listed company department by department — every function mapped, fixed, systematised, and governed.",
-        "Drove excellence across a group of companies as Chief Excellence Officer — common standards, a performance framework, and a governance structure, all put in place and made to stick.",
-        "Led teams of more than a thousand people at peak — and worked across every size of company, from startups to large organisations.",
-        "Led M&A from the operator's side — due diligence, negotiation, and the integration that actually makes a deal pay off.",
-        "Built a company's entire market presence from nothing — brand, digital, PR, and a platform that put it on industry stages.",
-        "Built a customer success function from zero, and ran operations handling 90,000 documents a month with the quality holding.",
+        "30 years across operations, HR, governance, and strategy, from early-stage ventures to organisations exceeding 1,000 employees",
+        "Rebuilt a listed company department by department, with every function — including HR and governance — assessed, corrected, and governed",
+        "Served as Chief Excellence Officer across a group of companies, establishing shared standards, a performance framework, and lasting governance",
+        "Coached founders and CEOs directly, from first-time founders to listed company leadership, across industries",
+        "Led mergers and acquisitions from the operator's perspective — due diligence, negotiation, and integration that delivers measurable value",
+        "Built a company's market presence from inception — brand, digital strategy, public relations, and industry standing",
+        "Built a customer success function from inception, managing operations processing 90,000 documents monthly without compromising quality",
     ];
     const testimonials = c?.testimonials || [
         { quote: "He came in when we were scaling fast and losing control of the back end. Within months, the chaos had a system — and it held.", name: "Founder & CEO", role: "SaaS Scale-up" },
@@ -50,10 +51,10 @@ export default function Proof() {
             <div className="mx-auto max-w-7xl text-left">
                 {/* Track record */}
                 <p className="text-xs font-semibold tracking-widest text-red-800">
-                    {c?.badge || "WHAT I'VE ACTUALLY DONE"}
+                    {c?.badge || "A RECORD OF RESULTS"}
                 </p>
                 <h2 className="mt-3 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-neutral-900 sm:text-4xl">
-                    {c?.heading || "Twenty-five years of taking broken things and making them work."}
+                    {c?.heading || "Thirty years of building, fixing, and governing businesses — from startup to multinational, across industries."}
                 </h2>
                 <div className="mt-6 h-0.5 w-12 bg-red-800" />
 
