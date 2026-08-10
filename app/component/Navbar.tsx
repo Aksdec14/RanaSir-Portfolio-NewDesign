@@ -8,8 +8,8 @@ export default function Navbar() {
     const c = content?.navbar;
     const links = c?.links || [
         { label: "About", href: "#about" },
-        { label: "Experience", href: "#experience" },
-        { label: "Expertise", href: "#expertise" },
+        { label: "Experience", href: "#proof" },
+        { label: "Expertise", href: "#ways-to-work" },
         { label: "Contact", href: "#contact" },
     ];
 

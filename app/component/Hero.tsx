@@ -12,6 +12,11 @@ export default function Hero() {
 
     const [open, setOpen] = useState(false);
 
+    const handleCtaClick = (e: React.MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    };
+
     const heading = c?.heading || "Your business is growing faster than it can hold itself together.";
     const word1 = c?.highlight_word_1 || "growing";
     const word2 = c?.highlight_word_2 || "together";
@@ -84,6 +89,7 @@ export default function Hero() {
                     <Button
                         label={c?.cta_text || "Schedule a Conversation"}
                         href="#contact"
+                        onClick={handleCtaClick}
                         color="red"
                     />
                 </div>
@@ -101,10 +107,11 @@ export default function Hero() {
             </div>
 
             {/* Mobile-only CTA, below the image */}
-            <div className="[grid-area:button] md:hidden">
+            <div className="flex justify-center [grid-area:button] md:hidden">
                 <Button
                     label={c?.cta_text || "Schedule a Conversation"}
                     href="#contact"
+                    onClick={handleCtaClick}
                     color="red"
                 />
             </div>

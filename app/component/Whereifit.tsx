@@ -66,7 +66,7 @@ export default function WhereIFit() {
     const icon = DEFAULT_ICONS[active] || DEFAULT_ICONS[0];
 
     return (
-        <section className="bg-stone-50 px-4 py-24 sm:px-6">
+        <section id="ways-to-work" className="bg-stone-50 px-4 py-24 sm:px-6">
             <div className="mx-auto max-w-6xl">
                 {/* Header row with arrow controls */}
                 <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">

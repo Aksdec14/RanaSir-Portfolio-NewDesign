@@ -12,7 +12,7 @@ export default function ToolsWontReach() {
     ];
 
     return (
-        <section className="bg-white px-6 py-24">
+        <section id="what-tools-miss" className="bg-white px-6 py-24">
             <div className="mx-auto max-w-6xl">
                 <div className="grid gap-12 sm:grid-cols-[minmax(0,320px)_1fr]">
                     {/* Left — fixed/sticky */}

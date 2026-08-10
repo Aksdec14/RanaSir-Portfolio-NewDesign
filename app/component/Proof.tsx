@@ -47,7 +47,7 @@ export default function Proof() {
     ];
 
     return (
-        <section className="bg-stone-100 px-4 py-24 sm:px-6">
+        <section id="proof" className="bg-stone-100 px-4 py-24 sm:px-6">
             <div className="mx-auto max-w-7xl text-left">
                 {/* Track record */}
                 <p className="text-xs font-semibold tracking-widest text-red-800">

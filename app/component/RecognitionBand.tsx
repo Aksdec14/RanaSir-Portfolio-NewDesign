@@ -13,7 +13,7 @@ export default function RecognitionBand() {
   ];
 
   return (
-    <section className="bg-red-800">
+    <section id="the-problem" className="bg-red-800">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-14 md:grid-cols-5 md:items-start md:gap-8 md:px-10 md:py-20">
         {/* Left: heading + closing line */}
         <div className="md:col-span-2">

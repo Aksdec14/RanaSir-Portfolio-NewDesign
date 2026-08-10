@@ -20,7 +20,7 @@ export default function HowIWork() {
     ];
 
     return (
-        <section className="bg-stone-100">
+        <section id="how-i-work" className="bg-stone-100">
             {/* Header */}
             <div className="mx-auto max-w-6xl px-6 py-20">
                 <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">

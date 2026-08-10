@@ -33,7 +33,7 @@ export default function About() {
   );
 
   return (
-    <section className="bg-white">
+    <section id="about" className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-20">
           

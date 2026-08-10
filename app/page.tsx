@@ -8,18 +8,19 @@ import WhereIFit from './component/Whereifit'
 import Proof from './component/Proof'
 import Contact from './component/Contact'
 import Footer from './component/Footer'
+import Reveal from './component/Reveal'
 
 const page = () => {
   return (
     <div>
-      <Hero />
+      <Reveal direction="left"><Hero /></Reveal>
       <RecognitionBand />
       <About />
       <HowIWork />
-      <ToolsWontReach />
-      <WhereIFit /> 
+      <Reveal direction="left"><ToolsWontReach /></Reveal>
+      <Reveal direction="right"><WhereIFit /></Reveal>
       <Proof />
-      <Contact /> 
+      <Reveal direction="right"><Contact /></Reveal>
       <Footer />
     </div>
   )

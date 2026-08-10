@@ -1,10 +1,10 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { MouseEvent, ReactNode } from "react";
 
 type ButtonProps = {
     label: string;
     href?: string;
-    onClick?: () => void;
+    onClick?: (e: MouseEvent<HTMLElement>) => void;
     color?: "red" | "black" | "white" | "outline";
     className?: string;
     icon?: ReactNode;
@@ -32,7 +32,7 @@ export default function Button({
 
     if (href) {
         return (
-            <Link href={href} className={classes}>
+            <Link href={href} className={classes} onClick={onClick}>
                 {label}
                 {icon}
             </Link>
