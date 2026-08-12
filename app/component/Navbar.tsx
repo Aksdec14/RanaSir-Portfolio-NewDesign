@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useContent } from "@/lib/ContentContext";
+import Image from "next/image";
 
 export default function Navbar() {
-    const { content } = useContent();
-    const c = content?.navbar;
-    const links = c?.links || [
+    const links = [
         { label: "About", href: "#about" },
         { label: "Experience", href: "#proof" },
         { label: "Expertise", href: "#ways-to-work" },
@@ -27,17 +25,27 @@ export default function Navbar() {
     return (
         <header
             className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
-                    ? "bg-stone-50/90 backdrop-blur-md shadow-sm"
-                    : "bg-stone-50"
+                ? "bg-stone-50/90 backdrop-blur-md shadow-sm"
+                : "bg-stone-50"
                 }`}
         >
-            <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 md:py-5">
                 {/* Logo */}
                 <a
                     href="#"
-                    className="text-xl font-semibold tracking-tight text-neutral-900 md:text-2xl"
+                    className="flex min-w-0 items-center gap-2 md:gap-3"
                 >
-                    {c?.logo_prefix || "Executive"}<span className="text-red-800"> {c?.logo_suffix || "Portfolio"}</span>
+                    <Image
+                        src="/Logo-RRS.png"
+                        alt="Rana Rajvinder Singh logo"
+                        width={48}
+                        height={48}
+                        priority
+                        className="h-9 w-9 shrink-0 object-contain md:h-11 md:w-11"
+                    />
+                    <span className="font-display text-xl font-semibold leading-none tracking-tight text-neutral-900 sm:text-xl md:text-2xl">
+                        Rana Rajvinder Singh
+                    </span>
                 </a>
 
                 {/* Desktop links */}
@@ -48,8 +56,8 @@ export default function Navbar() {
                                 href={link.href}
                                 onClick={() => setActive(link.label)}
                                 className={`group relative text-[15px] font-medium tracking-wide transition-colors ${active === link.label
-                                        ? "text-red-800"
-                                        : "text-neutral-700 hover:text-neutral-900"
+                                    ? "text-red-800"
+                                    : "text-neutral-700 hover:text-neutral-900"
                                     }`}
                             >
                                 {link.label}
@@ -65,16 +73,16 @@ export default function Navbar() {
                 {/* CTA */}
                 <a
                     href="#contact"
-                    className="hidden rounded-sm bg-red-800 px-6 py-3 text-sm font-semibold tracking-wide text-stone-50 transition-all duration-300 hover:bg-red-900 hover:shadow-lg hover:shadow-red-800/20 md:inline-block"
+                    className="hidden shrink-0 rounded-sm bg-red-800 px-5 py-2.5 text-sm font-semibold tracking-wide text-stone-50 transition-all duration-300 hover:bg-red-900 hover:shadow-lg hover:shadow-red-800/20 md:inline-block md:px-6 md:py-3"
                 >
-                    {c?.cta_text || "Schedule a Conversation"}
+                    Schedule a Conversation
                 </a>
 
                 {/* Mobile toggle */}
                 <button
                     aria-label="Toggle menu"
                     onClick={() => setMobileOpen((v) => !v)}
-                    className="flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
+                    className="flex h-9 w-9 shrink-0 flex-col items-center justify-center gap-1.5 md:hidden"
                 >
                     <span
                         className={`h-[1.5px] w-6 bg-neutral-900 transition-all duration-300 ${mobileOpen ? "translate-y-[7px] rotate-45" : ""
@@ -118,7 +126,7 @@ export default function Navbar() {
                             onClick={() => setMobileOpen(false)}
                             className="block rounded-sm bg-red-800 px-6 py-3 text-center text-sm font-semibold text-stone-50"
                         >
-                            {c?.cta_text || "Schedule a Conversation"}
+                            Schedule a Conversation
                         </a>
                     </li>
                 </ul>

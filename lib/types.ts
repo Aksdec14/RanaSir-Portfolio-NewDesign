@@ -33,12 +33,6 @@ export interface Testimonial {
 }
 
 export interface SectionContent {
-  navbar?: {
-    logo_prefix?: string;
-    logo_suffix?: string;
-    links?: NavLink[];
-    cta_text?: string;
-  };
   hero?: {
     badge?: string;
     heading?: string;

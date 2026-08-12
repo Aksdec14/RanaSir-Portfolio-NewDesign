@@ -34,21 +34,21 @@ export default function RecognitionBand() {
         </div>
 
         {/* Right: cards, stacked single column */}
-        <div className="flex flex-col gap-4 md:col-span-3">
-          {points.map((point, i) => (
-            <div
-              key={i}
-              className="rounded-lg border border-white/15 bg-white/5 p-5 backdrop-blur-sm sm:flex sm:items-start sm:gap-4 sm:p-6"
-            >
-              <p className="font-semibold leading-snug text-white sm:w-56 sm:flex-shrink-0">
-                {point.lead}
-              </p>
-              <p className="mt-1.5 leading-relaxed text-red-100 sm:mt-0">
-                {point.rest}
-              </p>
-            </div>
-          ))}
-        </div>
+<div className="flex flex-col gap-4 md:col-span-3">
+  {points.map((point, i) => (
+    <div
+      key={i}
+      className="group rounded-lg border border-white/15 bg-white/5 p-5 backdrop-blur-sm transition-colors duration-300 hover:bg-white sm:flex sm:items-start sm:gap-4 sm:p-6"
+    >
+      <p className="font-semibold leading-snug text-white transition-colors duration-300 group-hover:text-red-800 sm:w-56 sm:flex-shrink-0">
+        {point.lead}
+      </p>
+      <p className="mt-1.5 leading-relaxed text-red-100 transition-colors duration-300 group-hover:text-red-700 sm:mt-0">
+        {point.rest}
+      </p>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
