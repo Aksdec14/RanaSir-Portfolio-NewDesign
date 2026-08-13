@@ -43,10 +43,6 @@ export default function Contact() {
 
                     <div className="mt-6 h-0.5 w-12 bg-red-800" />
 
-                    <p className="mt-6 max-w-md text-[15px] leading-relaxed text-neutral-600">
-                        {c?.description || "Share what is not functioning as it should — whether the issue sits in operations, people, governance, or strategy. I will provide a direct assessment of whether I can help, with no obligation. Provide a brief account of what is happening within your business, and I will respond within one business day with an honest assessment and an outline of how I would proceed."}
-                    </p>
-
                     <div className="mt-10 rounded-md bg-red-800 p-8">
                         <p className="text-sm text-neutral-300">Direct</p>
                         <a

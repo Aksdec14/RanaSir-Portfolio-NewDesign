@@ -48,7 +48,7 @@ export default function About() {
               {headingHighlighted} for you.
             </h2>
 
-            <div className="mt-7 space-y-5 text-[12px] leading-[1.75] text-neutral-600 sm:text-base lg:text-lg">
+            <div className="mt-7 space-y-5 text-[15px] leading-[1.75] text-neutral-600 sm:text-lg lg:text-lg">
               {paragraphs.map((p, i) => (
                 <p
                   key={i}

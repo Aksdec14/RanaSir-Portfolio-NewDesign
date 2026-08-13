@@ -67,7 +67,7 @@ export default function WhereIFit() {
 
     return (
         <section id="ways-to-work" className="bg-stone-50 px-4 py-24 sm:px-6">
-            <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-7xl">
                 {/* Header row with arrow controls */}
                 <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
                     <div>
@@ -121,7 +121,7 @@ export default function WhereIFit() {
 
                     {/* Text side */}
                     <div key={`text-${active}`} className="animate-[fadeIn_0.4s_ease]">
-                        <p className="max-w-lg text-[15px] leading-relaxed text-neutral-600">
+                        <p className="max-w-lg text-[clamp(14px,1.5vw,17px)] leading-relaxed text-neutral-600">
                             {current.description}
                         </p>
                         <button className="group mt-6 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-red-800 transition-colors hover:text-red-950">

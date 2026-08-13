@@ -22,7 +22,7 @@ export default function HowIWork() {
     return (
         <section id="how-i-work" className="bg-stone-100">
             {/* Header */}
-            <div className="mx-auto max-w-6xl px-6 py-20">
+            <div className="mx-auto max-w-7xl px-6 py-20">
                 <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
                     <div className="text-left">
                         <h2 className="text-5xl font-extrabold tracking-tight text-neutral-900 sm:text-6xl">
@@ -41,7 +41,7 @@ export default function HowIWork() {
 
             {/* Cards */}
             <div className="bg-neutral-200/60 px-6 py-16">
-                <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-3">
+                <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-3">
                     {steps.map((step, i) => (
                         <StepCard key={step.number} {...step} icon={ICONS[i] || ICONS[0]} />
                     ))}

@@ -16,9 +16,8 @@ const page = () => {
       <Reveal direction="left"><Hero /></Reveal>
       <RecognitionBand />
       <About />
-      <HowIWork />
-      <Reveal direction="left"><ToolsWontReach /></Reveal>
       <Reveal direction="right"><WhereIFit /></Reveal>
+      <HowIWork />
       <Proof />
       <Reveal direction="right"><Contact /></Reveal>
       <Footer />
