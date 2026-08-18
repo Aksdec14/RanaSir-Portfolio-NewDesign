@@ -28,6 +28,68 @@ function TestimonialCard({ quote, name, role }: TestimonialCardProps) {
     );
 }
 
+type TimelineItemProps = {
+    index: number;
+    text: string;
+    side: "left" | "right";
+};
+
+function TimelineItem({ index, text, side }: TimelineItemProps) {
+    const num = String(index).padStart(2, "0");
+
+    return (
+        <div className="relative flex items-start sm:min-h-[110px]">
+            {/* Mobile layout: dot + text in a row */}
+            <div className="flex w-full items-start gap-4 sm:hidden">
+                <span className="relative mt-1 flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-full bg-red-800">
+                    <span className="absolute h-3 w-3 animate-ping rounded-full bg-red-800/40" />
+                </span>
+                <div>
+                    <p className="text-xl font-extrabold leading-none text-neutral-900">
+                        {num}
+                    </p>
+                    <p className="mt-2 text-[15px] leading-relaxed text-neutral-600">
+                        {text}
+                    </p>
+                </div>
+            </div>
+
+            {/* Desktop layout: alternating left/right around center line */}
+            <div className="hidden w-full sm:grid sm:grid-cols-[1fr_auto_1fr] sm:items-start sm:gap-6">
+                <div className="text-right">
+                    {side === "left" && (
+                        <div>
+                            <p className="text-xl font-extrabold leading-none text-neutral-900">
+                                {num}
+                            </p>
+                            <p className="mt-2 text-[15px] leading-relaxed text-neutral-600">
+                                {text}
+                            </p>
+                        </div>
+                    )}
+                </div>
+
+                <span className="relative mt-2 flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-full bg-red-800">
+                    <span className="absolute h-3 w-3 animate-ping rounded-full bg-red-800/40" />
+                </span>
+
+                <div className="text-left">
+                    {side === "right" && (
+                        <div>
+                            <p className="text-xl font-extrabold leading-none text-neutral-900">
+                                {num}
+                            </p>
+                            <p className="mt-2 text-[15px] leading-relaxed text-neutral-600">
+                                {text}
+                            </p>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function Proof() {
     const { content } = useContent();
     const c = content?.proof;
@@ -49,7 +111,7 @@ export default function Proof() {
     return (
         <section id="proof" className="bg-stone-100 px-4 py-24 sm:px-6">
             <div className="mx-auto max-w-7xl text-left">
-                {/* Track record */}
+                {/* Header */}
                 <p className="text-xs font-semibold tracking-widest text-red-800">
                     {c?.badge || "A RECORD OF RESULTS"}
                 </p>
@@ -58,19 +120,36 @@ export default function Proof() {
                 </h2>
                 <div className="mt-6 h-0.5 w-12 bg-red-800" />
 
-                <ul className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
-                    {record.map((item) => (
-                        <li key={item} className="flex gap-4">
-                            <span className="mt-2 h-1.5 w-4 flex-shrink-0 bg-red-800" />
-                            <p className="text-[15px] leading-relaxed text-neutral-600">
-                                {item}
-                            </p>
-                        </li>
-                    ))}
-                </ul>
+                {/* Track record: intro text (left) + timeline (right), like the reference layout */}
+                <div className="mt-14 grid gap-12 lg:grid-cols-[minmax(0,320px)_1fr] lg:gap-16">
+                    <div className="lg:sticky lg:top-24 lg:self-start">
+                        <p className="text-[15px] leading-relaxed text-red-800">
+                            {(c as { recordIntro?: string } | undefined)?.recordIntro ||
+                                "A track record built across three decades — operations, governance, strategy, and growth — proven at every stage from startup to multinational."}
+                        </p>
+                    </div>
+
+                    <div className="relative">
+                        {/* Center vertical line (desktop) */}
+                        <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-neutral-300 sm:block" />
+                        {/* Left vertical line (mobile) */}
+                        <div className="absolute left-[5px] top-0 h-full w-px bg-neutral-300 sm:hidden" />
+
+                        <div className="flex flex-col gap-10 sm:gap-4">
+                            {record.map((item, i) => (
+                                <TimelineItem
+                                    key={item}
+                                    index={i + 1}
+                                    text={item}
+                                    side={i % 2 === 0 ? "right" : "left"}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
 
                 {/* Testimonials */}
-                <div className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-24 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {testimonials.map((t) => (
                         <TestimonialCard key={t.quote} {...t} />
                     ))}
