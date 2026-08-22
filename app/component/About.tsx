@@ -6,10 +6,10 @@ export default function About() {
   const { content } = useContent();
   const c = content?.about;
   const paragraphs = c?.paragraphs || [
-    "I understand what is required to hold a business together through rapid growth, because I have built and run companies of my own, and have carried out this work — across operations, people, governance, and strategy — at scale, from early-stage ventures to multinational organisations, across industries, for three decades.",
-    "Founded and continue to lead FusionEdge, a SaaS platform for enterprise operations.",
-    "Rebuilt a listed company department by department — operations, human resources, governance, finance, and strategy alike — with every function assessed, corrected, and governed.",
-    "Served as Chief Excellence Officer across a group of companies, building shared standards, a performance framework, and governance that has lasted. Coached founders and CEOs directly, from early-stage ventures to listed company leadership, across industries and irrespective of sector.",
+    "I know what it takes to hold a business together through rapid growth — because I've built and run companies of my own. Operations, people, governance, strategy: I've done this work at scale, from early-stage ventures to multinationals, across industries, for three decades.",
+    "Founder and CEO of FusionEdge, a SaaS platform for enterprise operations.",
+    "Rebuilt a listed company function by function — operations, HR, governance, finance, strategy — every part assessed, corrected, and governed.",
+    "Chief Excellence Officer across a group of companies, building shared standards, performance frameworks, and governance that lasted. Coached founders and CEOs directly, from early-stage ventures to listed company leadership.",
     "I view the business as a whole — operations, people, governance, and strategy together — and remain engaged until the change is embedded, irrespective of industry or stage. Strategic judgment and hands-on execution, delivered by one person.",
   ];
 
@@ -23,7 +23,7 @@ export default function About() {
   );
 
   return (
-    <section id="about" className="bg-white">
+    <section id="about" className="bg-stone-100">
       <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-20">
 
@@ -31,7 +31,7 @@ export default function About() {
           <div className="md:sticky md:top-24 md:self-start">
             <div className="overflow-hidden rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)]">
               <img
-                src="/about.jpeg"
+                src="/about-section.jpeg"
                 alt="Working session"
                 className="aspect-[4/5] w-full object-cover"
               />

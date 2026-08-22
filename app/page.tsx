@@ -9,17 +9,19 @@ import Proof from './component/Proof'
 import Contact from './component/Contact'
 import Footer from './component/Footer'
 import Reveal from './component/Reveal'
+import Testimonials from './component/Testimonials'
 
 const page = () => {
   return (
     <div>
       <Reveal direction="left"><Hero /></Reveal>
-      <RecognitionBand />
       <About />
+      <RecognitionBand />
       <Reveal direction="right"><WhereIFit /></Reveal>
       <HowIWork />
       <Proof />
       <Reveal direction="right"><Contact /></Reveal>
+      <Testimonials />
       <Footer />
     </div>
   )
